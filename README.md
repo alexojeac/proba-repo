@@ -8,7 +8,7 @@
 git init
 ```
 
-< Sirve para inicializar un repo local
+> Sirve para inicializar un repo local
 
 
 ### Pasos a seguir na práctica
