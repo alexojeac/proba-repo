@@ -204,3 +204,54 @@ git restore --stage
 12. Facemos un git reset --soft para desfacer o commit pero non o git add . nin os cambios e revisamos o estado do repo vendo que o git add ainda se conserva.
 13. Facemos de novo git commit -m "borrado accidental" e un git log para ver o estado do repo.
 14. Volvemos a última version anterior do repo utilizando o comando git reset --hard e vemos que o repo volveu o estado anterior.
+
+## Practica 5: Ramas
+
+### Comandos Empregados
+
+``` bash 
+git branch nomeRama
+```
+
+> Sirve para crear unha nova rama.
+
+``` bash 
+git branch -d nomeRama
+```
+
+> Sirve para eliminar unha rama.
+
+``` bash 
+git checkout nomeRama
+```
+
+> Sirve para colocarse nunha rama existente.
+
+``` bash 
+git commit -a -m "Mensaxe do commit"
+```
+
+> Sirve para facer o add e o commit á vez.
+
+``` bash 
+git merge nomeRama
+```
+
+> Sirve para combinar esa rama coa rama á que apunta o HEAD (é recomendable estar situado na rama main, se é a rama coa que queres fusionar.
+
+### Pasos a seguir na práctica.
+
+1. Creamos unha nova rama nuevaRama.
+2. Facemos un commit para avanzar coa rama main.
+3. Facemos un checkout para apuntar á rama nuevaRama. 
+4. Facemos un commit para avanzar coa rama nuevaRama.
+5. Ahora temos dous commits diferentes, e a cada un apunta unha rama diferente.
+6. Facemos un checkout main.
+7. Facemos un marge nuevaRama para combinar as ramas, crearase un novo commit.
+8. Borramos nuevaRama con branch -d.
+9. Creamos unha nova rama con branch nuevaRama2.
+10. Facemos o proceso anterior para separar as dúas ramas que temos agora mesmo.
+11. Nunha rama editamos un ficheiro, e na outra editamos o mismo ficheiro, pero de forma diferente.
+12. Colocamonos na rama main con checkout.
+13. Facemos o commit -a -m ""Mensaxe", daranos un error porque o ficheiro que editamos de diferente forma nas duas ramas non o pode combinar.
+14. Daremoslle á opción de combinar todo e engadirá todo o contido dos dous arquivos.
