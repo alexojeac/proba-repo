@@ -255,3 +255,45 @@ git merge nomeRama
 12. Colocamonos na rama main con checkout.
 13. Facemos o commit -a -m ""Mensaxe", daranos un error porque o ficheiro que editamos de diferente forma nas duas ramas non o pode combinar.
 14. Daremoslle á opción de combinar todo e engadirá todo o contido dos dous arquivos.
+
+## Practica 6: Repositorios remotos
+
+### Comandos Empregados
+
+```bash 
+git remote remove origin
+```
+> Elimina a conexión co repositorio remoto.
+
+```bash 
+git remote -v
+```
+> Permite ver as conexións con repositorios remotos.
+
+```bash 
+git remote add origin "url github"
+```
+> Permite engadir unha conexión a un repositorio remoto.
+
+```bash 
+-----------------
+```
+> ------------------
+
+```bash 
+----------------------
+```
+> -----------------
+### Pasos a seguir na práctica.
+
+1. Eliminamos a conexión co repositorio remoto co comando "git remote remove origin"
+2. Creamos un novo repositorio remoto en github e conectamolo co noso repo local
+3. Executamos o comando "git push -u nomedorepo master" para subir os datos do repositorio local o repositorio remoto 
+4. No repositorio remoto de github revisamos que se agregaron os datos do repositorio local facendo click en "commits"
+5. Invitamos ao noso repositorio un compañeiro e viceversa.
+6. Copiamos a url do repositorio ao que nos invitaron, e poñemolo co comando git clon url
+7. No ficheiro actoremos poñeomos o noso nome de usuario en github e correo.
+8. Fcaemos un git add .
+9. Facemos un git commit -m "mensaxe"
+11. Por ultimo pusheamos ao repositorio remoto con git push origin master
+12. Comprobamos que se fixo correctamente o push mirando os commits do noso proxecto
